@@ -1,0 +1,122 @@
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ height: -100vh;
+ margin: 10px;
+    background-image: url('https://media.istockphoto.com/id/1502123811/sv/foto/lose-weight-fat-diet-and-scale-feet-standing-on-electronic-scales-for-weight-control.jpg?s=612x612&w=0&k=20&c=uPOy4veWVPmcfcGDjAVieBwJqZ_T4LbcqWMc6ddRVsg=');
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+
+}
+
+.container {
+  box-shadow: 0px 0px 12px #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+
+input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 8px 4px;
+  margin: 8px 0;
+  border-radius: 8px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 8px 0;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background-color: #fff;
+  color: #333;
+}
+
+.center {
+  text-align: center;
+  margin: 24px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.img-container img {
+  height: 200px;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.container__image__bim{
+  height: 215px;
+  width: 75%;
+  margin-inline: auto;
+
+}
+.container__image__bim img{
+  width: 100%;
+  max-height: 100%;
+  background-size: cover;
+}
+
+
+
+/*.container-calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bmi {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+.body{
+    background-image: url('https://images.pexels.com/photos/349610/pexels-photo-349610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+}
+@media (max-width: 600px) {
+  .recipes {
+    grid-template-columns: 1fr;
+  }
+}
+
+.recipe-card {
+  padding: 16px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .recipe-card {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-card .recipe__img {
+    height: 220px;
+  }
+}
