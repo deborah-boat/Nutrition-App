@@ -2,6 +2,7 @@ import { ChangeEvent, useCallback, useState } from "react";
 import MealList from "../Calories/MealList";
 import "../Calories/App.css";
 import type { IMealData } from "../Calories/MealList";
+import Footer from "../../components/Footer/footer";
 
 function Calories() {
   const [mealData, setMealData] = useState<IMealData | undefined>(undefined);
@@ -30,10 +31,6 @@ function Calories() {
     setCalories(Number(e.target.value));
   }, []);
 
-  // function handleChange(e: ChangeEvent<HTMLInputElement>) {
-  //   e.preventDefault();
-  //   setCalories(Number(e.target.value));
-  // }
 
   return (
     <div className="App">
@@ -43,6 +40,7 @@ function Calories() {
         <button onClick={getMealData}>Get Daily Meal Plan</button>
       </section>
       {mealData && <MealList mealData={mealData} />}
+      <Footer/>
     </div>
   );
 }

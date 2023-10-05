@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./recipe.css";
+import Loading from "../../components/Loading/loading";
 
 interface Recipe {
   id: number;
   image: string;
   imageType: "jpg";
   title: string;
+  sourceUrl: string;
+
 }
 
 const Recipe = () => {
@@ -30,7 +33,7 @@ const Recipe = () => {
 
       const result = await fetch(
         buildResourceURL({
-          apiKey: "a06780308db84b47aebc5e4d8cb9abd6",
+          apiKey: "af2f555e879e4ed782b1541d93662b5b",
           type: mealTime,
         }),
         {
@@ -60,15 +63,22 @@ const Recipe = () => {
 
   return (
     <div>
+      <h1 id="recipes"></h1>
+      <div>{}</div>
+      {loading && <Loading />}
+
+
+
+
       <div style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}>
         {loading && <h4>Fetching {mealTime} recipes here</h4>}
       </div>
-
       <div className="recipes">
         {recipes.map((item) => {
           return <RecipeItem key={item.id} item={item} />;
         })}
       </div>
+
     </div>
   );
 };
@@ -80,7 +90,7 @@ const RecipeItem = ({ item }: { item: Recipe }) => {
     <div className="recipe-card" style={{ marginTop: "2rem" }}>
       {/* image */}
       <div style={{ width: "100%", height: "40vh" }} className="recipe__img">
-        <img src={item.image} style={{ width: "100%", height: "100%", objectPosition: "center" }} />
+       <img src={item.image} style={{ width: "100%", height: "100%", objectPosition: "center",cursor:"pointer" }} />
       </div>
       <p style={{ fontWeight: "bold" }}>{item.title}</p>
     </div>

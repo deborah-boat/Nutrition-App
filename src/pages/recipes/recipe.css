@@ -1,11 +1,12 @@
-.body{
-    background-image: url('https://images.pexels.com/photos/349610/pexels-photo-349610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-}
+nav{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-10);
+    padding: 2rem;
+  gap: 1rem;
 
+
+}
 
 
 .recipes {

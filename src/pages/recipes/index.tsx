@@ -29,7 +29,7 @@ const User = () => {
 
     const result = await fetch(
       buildResourceURL({
-        apiKey: "a06780308db84b47aebc5e4d8cb9abd6",
+        apiKey: "af2f555e879e4ed782b1541d93662b5b",
         query: searchQuery,
       }),
       {
@@ -113,6 +113,7 @@ const SearchRecipeItem = ({ item }: { item: Recipe }) => {
         <img src={item.image} style={{ width: "100%", height: "100%", objectPosition: "center" }} />
       </div>
       <p style={{ fontWeight: "bold" }}>{item.title}</p>
+
     </div>
   );
 };

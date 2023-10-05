@@ -1,15 +1,21 @@
 import './loading.css'
 
 
-export default function loading() {
+function Loading() {
   return (
-    <div className='loading_wrapper'>
-        <div className='Ids-roller'>
-           <div></div> 
-           <div></div>
-           <div></div>
-           <div></div> 
-        </div>
+    <div className="loading__wrapper">
+      <div className="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
-  )
+  );
 }
+
+export default Loading;
