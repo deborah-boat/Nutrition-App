@@ -64,11 +64,8 @@ const Recipe = () => {
   return (
     <div>
       <h1 id="recipes"></h1>
-      <div>{}</div>
+      <div></div>
       {loading && <Loading />}
-
-
-
 
       <div style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}>
         {loading && <h4>Fetching {mealTime} recipes here</h4>}

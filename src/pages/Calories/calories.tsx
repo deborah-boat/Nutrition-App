@@ -2,6 +2,7 @@ import { ChangeEvent, useCallback, useState } from "react";
 import MealList from "../Calories/MealList";
 import "../Calories/App.css";
 import type { IMealData } from "../Calories/MealList";
+
 import Footer from "../../components/Footer/footer";
 
 function Calories() {

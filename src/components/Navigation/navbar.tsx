@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
-import ColorModeSwitch from "../../theme/colorSwitch";
-import { useEffect, useState } from "react";
+import ColorModeSwitch from "../../theme/themeToggle";
+import {  useState,useEffect, } from "react";
 
 export default function navbar() {
   const storedMode = localStorage.getItem("mode");
@@ -16,8 +16,7 @@ export default function navbar() {
   const toggleMode = () => {
     setDarkMode(!darkMode);
   };
-
-  return (
+    return (
     <header>
       <nav>
         <div className="logo-container"></div>
@@ -33,3 +32,5 @@ export default function navbar() {
     </header>
   );
 }
+
+

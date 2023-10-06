@@ -1,4 +1,4 @@
-import "./colorSwitch.css"
+import "./themeToggle.css"
 
 interface ColorModeSwitchProps {
   darkMode: boolean;
@@ -17,3 +17,6 @@ const ColorModeSwitch: React.FC<ColorModeSwitchProps> = ({ darkMode, toggleMode 
 };
 
 export default ColorModeSwitch;
+
+
+
