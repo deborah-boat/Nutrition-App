@@ -16,19 +16,8 @@ export interface IRecipe {
   strMeal: string;
   strMealThumb: string;
   strInstructions: string;
-  [key: `strIngredient${number}`]: string;
-  [key: `strMeasure${number}`]: string;
 }
 
-export interface IIngredients {
-  ingredient: string | number;
-  measure: string;
-}
-
-
-export interface IFilter {
-  setFilterCategories(filter: string[]): void;
-}
 
 
 

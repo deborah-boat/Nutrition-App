@@ -87,7 +87,7 @@ const RecipeItem = ({ item }: { item: Recipe }) => {
     <div className="recipe-card" style={{ marginTop: "2rem" }}>
       {/* image */}
       <div style={{ width: "100%", height: "40vh" }} className="recipe__img">
-       <img src={item.image} style={{ width: "100%", height: "100%", objectPosition: "center",cursor:"pointer" }} />
+       <img src={item.image} style={{ width: "100%", height: "100%", objectPosition: "center",cursor:"pointer" }}  />
       </div>
       <p style={{ fontWeight: "bold" }}>{item.title}</p>
     </div>

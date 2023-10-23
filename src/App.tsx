@@ -3,7 +3,7 @@ import Navigation from "./components/Navigation/navbar";
 import Homepage from "./pages/Homepage/homepage";
 import BMI from "./pages/Bmi/bmi";
 import Calories from "./pages/Calories/calories";
-import Task from "./pages/Task/app";
+import Task from "./pages/Task/task";
 import Recipes from "./pages/recipes";
 import Recipe from "./pages/recipes/recipe";
 
